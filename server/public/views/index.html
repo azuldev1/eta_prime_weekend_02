@@ -9,6 +9,31 @@
         <script type="text/javascript" src="/scripts/app.js"></script>
     </head>
     <body>
+
+      <div><h1>Eta Member</h1></div>
+      <main>
+    <aside class="back">
+        <script id="back" type="text/x-handlebars-template">
+        <button id="test">back: {{firstName}}</button>
+        </script>
+​    </aside>
+        <section class = "main">
+          <script id = "etaList" type ="text/x-handlebars-template">
+          <div class="">{{firstName}} {{lastName}}</div>
+          {{#each favoriteMovies}}
+               <div class="movie">
+                   <p>Movie: {{movieName}}<p>
+                   <p>Realse Year: {{releaseYear}}</p>
+               </div>
+          {{/each}}
+          </script>
+        </section>
+  <aside class="forward">
+       <script id="forward" type="text/x-handlebars-template">
+​        <button>next: {{firstName}}</button>
+​       </script>
+   </aside>
+      </main>
     </body>
 
 </html>
